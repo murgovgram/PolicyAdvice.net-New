@@ -2,6 +2,12 @@ module.exports = {
   purge: ['./**/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      colors: {
+        bgOrange: '#FF6600',
+        bgBlue: '#0F5499',
+      }
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
@@ -17,9 +23,12 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
-      }
-      
     },
+    fontFamily: {
+      Montserrat: ['Montserrat']
+    },
+
+  },
   variants: {
     extend: {},
     display: ['responsive', 'group-hover', 'group-focus'],
