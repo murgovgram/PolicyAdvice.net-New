@@ -8,25 +8,25 @@ module.exports = {
         bgBlue: '#0F5499',
       },
       boxShadow: {
-        box: '-50px 50px 50px -50px rgba(0.015, 0.015, 0.015, 0.015), 30px 30px 30px 30px rgba(0.04, 0.04, 0.04, 0.04)',
+        box: '0px 0px 10px 10px rgba(0.010, 0.010, 0.010, 0.010), 10px 10px 10px 10px rgba(0.02, 0.02, 0.02, 0.02)',
       }
     },
 
     screens: {
       'sm': '640px',
-      // => @media (min-width: 640px) { ... }
+      // => @media (min-width: 640px) { Phone }
 
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
+      // => @media (min-width: 768px) { Tablet }
 
       'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+      // => @media (min-width: 1024px) { Laptop }
 
       'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
+      // => @media (min-width: 1280px) { Big }
 
       '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+      // => @media (min-width: 1536px) { Big }
     },
     fontFamily: {
       Montserrat: ['Montserrat']
