@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tailwind.css">
+  <title>Author Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="mx-auto font-Montserrat">
+
+
+  <!-- Header -->
+  <div class="grid grid-cols-2 px-4 py-4 shadow-md md:px-24">
+    <div class="flex ">
+      <div class="inline-block my-auto mr-4 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div>
+        <img class="inline-block w-40 " src="/public/build/images/PolicyAdviceLogo.svg" alt="">
+      </div>
+    </div>
+    <div class="flex hidden my-auto md:block md:justify-end ">
+      <input class="float-right w-64 px-3 py-1 text-sm bg-white border rounded-md focus:outline-none border-bgBlue "
+        placeholder="Search">
+    </div>
+  </div>
+
+
+  <!--Heading-->
+  <div class="py-20 mx-auto bg-gray-100">
+    <div class="">
+      <p class="px-4 -mt-12 text-sm font-light md:px-24">Home / Author Page</p>
+    </div>
+  </div>
+
+
+  <!--Author-->
+  <div class="flex px-4 pb-10 -mt-20 md:px-24 max-w-screen-2xl">
+    <svg class="inline-block " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="171"
+      height="171" viewBox="0 0 171 171">
+      <image id="f1ecabc34d6d74536740f1dc49129299" width="171" height="171"
+        xlink:href="data:image/jpeg;base64,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oRDBAcDP3nyT9Ke5CEKMg5p+8b2J4AGKrxyebKxyeKNLWAc25EZtuWPAxUbERgKPmlPbHT8KkkyzqgJBAyT7n/P60nlpECWOwd/U/WptcCNB5anAG49zUDEnk8mrGGl+6Nid2bioJHRDgcn1NRJaD2O0+DOoHTPin4Sut23ytVtW59BKua/WSNq/HvwtefYNd065zt8mdJM+mGBr9fbeXeqt6814GPVpJmsdUZX7Svxdj+EPw2u9Qikxq1632LT17+awOX/4AoZvqAO9flDqk73dy7uSzuSSxPJJr7a/4KSXGy08CMs/Mc107QeqkRDf+HT8a+IZv3jZPINd+AglT5urJm9SqUL46rIP1prBbldrfLIvRx1FTuTEctkr2YdRUN0QzLLGcN+je31r1bJIzIrGd4rto5CGyMEjitAvjJI5/wA//XrHklQyI68MOGU9RV+O5GwZJzURfQZZDZOP50mQBk8VVafC8HOKha7OcZz+NPmsBpFwRwePpULSYz6VTF5tGe3Snbyyk54xz7U+e6BhjBLFjhRuCKud5/unBGAfWqbbncE8EKAfrzV62ARJT26VSkbEzccjis2ra33EPXkeuPSpVi471BFKBirSSDr3+tEWBIiBe+KcZNoPIxikV9xxn8qZNznnFb9NAK8shCkA8mprWPy09CearP8AO4HbvVieQRwEDgnCg/Xis11bAiWUszOBksc564oACZeVuR3z/n9KV7hF2xoodwMY6AfU0xYw7BpWz6en4D+tJMALSXRwo2R+p7010SEYHzN3NPklxx90fz+tVuS3AJ69KmQFmzP70Gv178M3n27QdNuSc+daxSZ/3kB/rX5CW3Eqg+or9X/hNefb/hn4UuP7+l2x/wDIS14WPWkTaB//2Q==" />
+    </svg>
+    <div class="inline-block mt-10 ml-4">
+      <h1 class="font-light ">Author</h1>
+      <h1 class="py-6 text-2xl font-bold text-bgBlue">Alex<br> Kopenstinsky</h1>
+    </div>
+  </div>
+
+
+  <!--Boxses-->
+  <div class="px-4 mx-auto mt-20 md:px-24 max-w-screen-2xl">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="relative rounded-lg shadow-lg">
+        <img class="w-full rounded-t-lg h-3/6" src="images/Rectangle452.png" alt="">
+        <div class="py-1 bg-bgOrange"></div>
+        <h2 class="px-4 mt-4 text-lg font-bold text-bgBlue">How to use search engine optimization</h2>
+        <p class="px-4 py-4 font-thin ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam
+        </p>
+        <div class="absolute flex px-4 my-auto bottom-2">
+          <svg class="inline-block my-auto" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.539">
+            <path id="Path_27" data-name="Path 27"
+              d="M11.242,0A2.282,2.282,0,0,0,9.624.679L.818,9.485l-.035.174L.174,12.722,0,13.539l.818-.174,3.063-.609.174-.035,8.806-8.806A2.3,2.3,0,0,0,11.242,0Zm0,1.061a1.185,1.185,0,0,1,.835.4,1.062,1.062,0,0,1,0,1.671l-.4.383L10.024,1.862l.383-.4A1.186,1.186,0,0,1,11.242,1.061Zm-2,1.584L10.894,4.3,4.159,11.033A3.794,3.794,0,0,0,2.505,9.38Zm-7.449,7.64a2.636,2.636,0,0,1,1.462,1.462l-1.828.365Z"
+              fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">Smiljanic Stasha</p>
+          <svg class="inline-block my-auto ml-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+            viewBox="0 0 13.54 13.54">
+            <path id="Path_26" data-name="Path 26"
+              d="M99.259,2.048H96.416V.965a.136.136,0,0,0-.135-.135h-.948A.136.136,0,0,0,95.2.965V2.048H90.865V.965a.136.136,0,0,0-.135-.135h-.948a.136.136,0,0,0-.135.135V2.048H86.8a.541.541,0,0,0-.542.542V13.828a.541.541,0,0,0,.542.542H99.259a.541.541,0,0,0,.541-.542V2.59A.541.541,0,0,0,99.259,2.048Zm-.677,11.1h-11.1V6.719h11.1Zm-11.1-7.582v-2.3h2.166v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267H95.2v.812a.136.136,0,0,0,.135.135h.948a.136.136,0,0,0,.135-.135V3.267h2.167v2.3Z"
+              transform="translate(-86.261 -0.83)" fill="#2b2b2b" />
+          </svg>
+          <p class="inline-block my-auto ml-1 text-xs">30th, August, 2021</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <div class="bg-gray-200">
+    <div class="px-4 py-12 mx-auto mt-20 bg-gray-200 md:px-24 max-w-screen-2xl">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+
+        <div class="grid grid-cols-3">
+          <div>
+            <ul class="text-xs font-bold leading-loose text-gray-600">
+              <li>MAKE MONEY</li>
+              <li>SAVE MONEY</li>
+              <li>MONEY </li>
+              <li>BANKING</li>
+              <li>INVESTING</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="text-xs font-bold leading-loose text-gray-600">
+              <li>MAKE MONEY</li>
+              <li>SAVE MONEY</li>
+              <li>MONEY </li>
+              <li>BANKING</li>
+              <li>INVESTING</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="text-xs font-bold leading-loose text-gray-600">
+              <li>MAKE MONEY</li>
+              <li>SAVE MONEY</li>
+              <li>MONEY </li>
+              <li>BANKING</li>
+              <li>INVESTING</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="font-thin leading-loose text-justify">Policy Advice is a website devoted to helping everyday people
+            make, save,
+            and grow
+            money. While our team is
+            comprised of
+            personal finance pros with various areas of expertise, nothing can replace professional financial, tax, or
+            legal advice.
+            Policy Advice is a participant in the Amazon Services LLC Associates Program, an affiliate advertising
+            program
+            designed
+            to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.Policy Advice
+            is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program
+            designed
+            to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+        </div>
+      </div>
+
+      <div class="py-2 mt-12 border-b-2 border-gray-300">
+        <p class="inline-block text-sm font-bold text-gray-600">Stay In Touch</p>
+        <svg class="inline-block ml-4" xmlns="http://www.w3.org/2000/svg" width="109.857" height="28.094"
+          viewBox="0 0 109.857 28.094">
+          <g id="Group_363" data-name="Group 363" transform="translate(-227.072 -6447.973)">
+            <g id="Group_362" data-name="Group 362" transform="translate(227.072 6447.973)">
+              <path id="Path_8026" data-name="Path 8026"
+                d="M9.1,7.721V9.655H7.687v2.364H9.1v7.028h2.911V12.019h1.953s.184-1.134.273-2.374H12.025V8.03a.687.687,0,0,1,.632-.567h1.584V5H12.085C9.031,5,9.1,7.367,9.1,7.721Z"
+                transform="translate(3.111 2.023)" fill="#0f5499" />
+              <path id="Path_8027" data-name="Path 8027"
+                d="M14.047,25.284A11.237,11.237,0,1,0,6.1,21.993a11.238,11.238,0,0,0,7.946,3.291Zm0,2.809A14.047,14.047,0,1,1,28.094,14.047,14.047,14.047,0,0,1,14.047,28.094Z"
+                fill="#0f5499" />
+            </g>
+            <path id="Path_8028" data-name="Path 8028"
+              d="M13.164,6.5a6.566,6.566,0,1,0,6.566,6.566A6.557,6.557,0,0,0,13.164,6.5Zm0,10.834a4.268,4.268,0,1,1,4.268-4.267A4.277,4.277,0,0,1,13.164,17.335ZM20,4.7a1.531,1.531,0,1,0,.587.116A1.532,1.532,0,0,0,20,4.7Zm5.964,8.365c0-1.767.016-3.518-.083-5.282a7.61,7.61,0,0,0-2.065-5.366A7.6,7.6,0,0,0,18.45.354c-1.767-.1-3.518-.083-5.282-.083S9.649.255,7.885.354A7.61,7.61,0,0,0,2.519,2.419,7.6,7.6,0,0,0,.454,7.785C.355,9.552.371,11.3.371,13.067S.355,16.586.454,18.35a7.61,7.61,0,0,0,2.065,5.366A7.6,7.6,0,0,0,7.885,25.78c1.767.1,3.518.083,5.282.083s3.518.016,5.282-.083a7.61,7.61,0,0,0,5.366-2.065A7.6,7.6,0,0,0,25.88,18.35c.1-1.764.083-3.515.083-5.282Zm-2.817,7.549a4.367,4.367,0,0,1-2.433,2.433c-1.684.669-5.683.519-7.549.519s-5.868.15-7.552-.515a4.367,4.367,0,0,1-2.433-2.433c-.666-1.687-.515-5.686-.515-7.552s-.15-5.868.515-7.552a4.068,4.068,0,0,1,.967-1.466,4.138,4.138,0,0,1,1.466-.967c1.684-.666,5.686-.515,7.552-.515s5.868-.15,7.552.515a4.068,4.068,0,0,1,1.466.967,4.1,4.1,0,0,1,.967,1.466c.666,1.684.515,5.686.515,7.552S23.815,18.932,23.146,20.616Z"
+              transform="translate(268.701 6448.952)" fill="#0f5499" />
+            <path id="Path_8030" data-name="Path 8030"
+              d="M27.857,2.686a11.444,11.444,0,0,1-3.282.9A5.73,5.73,0,0,0,27.088.423a11.411,11.411,0,0,1-3.629,1.386A5.717,5.717,0,0,0,13.72,7.023,16.23,16.23,0,0,1,7.195,5.289,16.23,16.23,0,0,1,1.94,1.051,5.722,5.722,0,0,0,3.709,8.682,5.7,5.7,0,0,1,1.12,7.967V8.04a5.717,5.717,0,0,0,4.585,5.6,5.756,5.756,0,0,1-2.581.1A5.718,5.718,0,0,0,8.463,17.71a11.469,11.469,0,0,1-7.1,2.448A11.655,11.655,0,0,1,0,20.078a16.164,16.164,0,0,0,8.76,2.568c10.514,0,16.262-8.708,16.262-16.261,0-.245-.006-.493-.017-.739a11.619,11.619,0,0,0,2.85-2.957l0,0Z"
+              transform="translate(309.072 6450.696)" fill="#0f5499" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
