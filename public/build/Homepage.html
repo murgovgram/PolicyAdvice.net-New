@@ -16,272 +16,121 @@
 
   <!-- Header -->
   <div class="shadow-md">
-    <div class="grid grid-cols-2 px-4 py-4 mx-auto max-w-screen-2xl xl:px-24">
-      <div class="flex ">
-        <div class="inline-block my-auto mr-4 ">
+    <div class="grid grid-cols-2 px-4 py-4 mx-auto border max-w-screen-2xl xl:px-24">
+      <div class="flex my-auto mr-4 ">
 
-          <!--Hamburger Menu-->
-          <div>
-            <nav class="flex items-center justify-between bg-white ">
-              <div>
-                <button class="flex items-center focus:outline-none navbar-burger">
-                  <svg class="block w-4 h-4 " fill="#0F5499" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Mobile menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        <div class="relative inline-block group">
+          <button class="flex items-center px-3 py-1 my-auto bg-white outline-none focus:outline-none min-w-16">
+            <svg viewBox="0 0 100 80" fill="#0F5499" width="20" height="20">
+              <rect width="100" height="20"></rect>
+              <rect y="30" width="100" height="20"></rect>
+              <rect y="60" width="100" height="20"></rect>
+            </svg>
+          </button>
+
+          <ul
+            class="absolute transition duration-300 ease-in-out origin-top transform scale-0 bg-white border-b border-l border-gray-100 h-200 top-12 group-hover:scale-100">
+
+            <!--Meni 1-->
+            <li class="relative w-40 border-b border-l border-gray-100 md:w-96 hover:bg-gray-100">
+              <button
+                class="flex items-center w-full py-4 pl-5 text-left border-b border-gray-100 outline-none focus:outline-none">
+                <a class="flex-1 text-sm font-bold text-bgBlue">Menu 1</a>
+                <a class="flex justify-end float-right mr-4 justify-self-end justify-items-end">
+                  <svg class="w-4 h-4 transition duration-300 ease-in-out fill-current"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
-                </button>
-              </div>
-            </nav>
-            <div class="relative hidden navbar-menu">
-              <div class="fixed inset-0 navbar-backdrop"></div>
-              <nav
-                class="fixed left-0 z-50 flex flex-col w-full py-6 overflow-y-auto bg-white border-b border-r border-gray-200 top-16 ">
-                <div class="grid md:grid-cols-4">
-                  <div class="py-6">
-                    <ul>
-                      <li class="">
-                        <a class="relative block px-4 py-4 my-auto font-semibold border-b border-gray-200 rounded md:ml-20 hover:border-l-2 hover:bg-gray-100 text-bgBlue "
-                          href="#">Banking
-                          <svg class="absolute top-0 bottom-0 inline-block my-auto md:right-0 right-5"
-                            xmlns="http://www.w3.org/2000/svg" width="10.448" height="18.897"
-                            viewBox="0 0 10.448 18.897">
-                            <path id="Path_8035" data-name="Path 8035" d="M-323.687,185.556l8.034,8.034,8.034-8.034"
-                              transform="translate(-184.142 -306.205) rotate(-90)" fill="none" stroke="#d3d3d3"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a class="relative block px-4 py-4 my-auto font-semibold border-b border-gray-200 rounded md:ml-20 hover:bg-gray-200 text-bgBlue "
-                          href="#">Insurance
-                          <svg class="absolute top-0 bottom-0 inline-block my-auto md:right-0 right-5"
-                            xmlns="http://www.w3.org/2000/svg" width="10.448" height="18.897"
-                            viewBox="0 0 10.448 18.897">
-                            <path id="Path_8035" data-name="Path 8035" d="M-323.687,185.556l8.034,8.034,8.034-8.034"
-                              transform="translate(-184.142 -306.205) rotate(-90)" fill="none" stroke="#d3d3d3"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a class="relative block px-4 py-4 my-auto font-semibold border-b border-gray-200 rounded md:ml-20 hover:bg-gray-200 text-bgBlue "
-                          href="#">Investing
-                          <svg class="absolute top-0 bottom-0 inline-block my-auto md:right-0 right-5"
-                            xmlns="http://www.w3.org/2000/svg" width="10.448" height="18.897"
-                            viewBox="0 0 10.448 18.897">
-                            <path id="Path_8035" data-name="Path 8035" d="M-323.687,185.556l8.034,8.034,8.034-8.034"
-                              transform="translate(-184.142 -306.205) rotate(-90)" fill="none" stroke="#d3d3d3"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a class="relative block px-4 py-4 my-auto font-semibold border-b border-gray-200 rounded md:ml-20 hover:bg-gray-200 text-bgBlue "
-                          href="#">Loans
-                          <svg class="absolute top-0 bottom-0 inline-block my-auto md:right-0 right-5"
-                            xmlns="http://www.w3.org/2000/svg" width="10.448" height="18.897"
-                            viewBox="0 0 10.448 18.897">
-                            <path id="Path_8035" data-name="Path 8035" d="M-323.687,185.556l8.034,8.034,8.034-8.034"
-                              transform="translate(-184.142 -306.205) rotate(-90)" fill="none" stroke="#d3d3d3"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a class="relative block px-4 py-4 my-auto font-semibold border-b border-gray-200 rounded md:ml-20 hover:bg-gray-200 text-bgBlue "
-                          href="#">Credit Cards
-                          <svg class="absolute top-0 bottom-0 inline-block my-auto md:right-0 right-5"
-                            xmlns="http://www.w3.org/2000/svg" width="10.448" height="18.897"
-                            viewBox="0 0 10.448 18.897">
-                            <path id="Path_8035" data-name="Path 8035" d="M-323.687,185.556l8.034,8.034,8.034-8.034"
-                              transform="translate(-184.142 -306.205) rotate(-90)" fill="none" stroke="#d3d3d3"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a class="relative block px-4 py-4 my-auto font-semibold border-b border-gray-200 rounded md:ml-20 hover:bg-gray-200 text-bgBlue "
-                          href="#">Money
-                          <svg class="absolute top-0 bottom-0 inline-block my-auto md:right-0 right-5"
-                            xmlns="http://www.w3.org/2000/svg" width="10.448" height="18.897"
-                            viewBox="0 0 10.448 18.897">
-                            <path id="Path_8035" data-name="Path 8035" d="M-323.687,185.556l8.034,8.034,8.034-8.034"
-                              transform="translate(-184.142 -306.205) rotate(-90)" fill="none" stroke="#d3d3d3"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a class="relative block px-4 py-4 my-auto font-semibold border-b border-gray-200 rounded md:ml-20 hover:bg-gray-200 text-bgBlue "
-                          href="#">Travel
-                          <svg class="absolute top-0 bottom-0 inline-block my-auto md:right-0 right-5"
-                            xmlns="http://www.w3.org/2000/svg" width="10.448" height="18.897"
-                            viewBox="0 0 10.448 18.897">
-                            <path id="Path_8035" data-name="Path 8035" d="M-323.687,185.556l8.034,8.034,8.034-8.034"
-                              transform="translate(-184.142 -306.205) rotate(-90)" fill="none" stroke="#d3d3d3"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a class="relative block px-4 py-4 my-auto font-semibold rounded md:ml-20 hover:bg-gray-200 text-bgBlue "
-                          href="#">Mortages
-                          <svg class="absolute top-0 bottom-0 inline-block my-auto md:right-0 right-5"
-                            xmlns="http://www.w3.org/2000/svg" width="10.448" height="18.897"
-                            viewBox="0 0 10.448 18.897">
-                            <path id="Path_8035" data-name="Path 8035" d="M-323.687,185.556l8.034,8.034,8.034-8.034"
-                              transform="translate(-184.142 -306.205) rotate(-90)" fill="none" stroke="#d3d3d3"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                </a>
+              </button>
+              <ul
+                class="absolute top-0 origin-top-left bg-white border-b border-r border-gray-100 right-3 h-200 md:flex ">
+                <!--kolona1-->
+                <li class="px-4 border-l border-r border-gray-100 w-72">
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 1</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 1</a>
+                </li>
+                <!--kolona2-->
+                <li class="px-4 border-r border-gray-100 w-72">
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 2</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 2</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 2</a>
+                </li>
+                <!--kolona3-->
+                <li class="px-4 border-r border-gray-100 w-72">
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 3</a>
+                </li>
+              </ul>
+            </li>
 
-                  <div class="hidden border-r border-gray-200 md:block">
-                    <h1 class="py-2 text-sm font-bold text-center text-bgBlue">Comparations</h1>
-                    <ul>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                    </ul>
-                    <h1 class="py-6 text-sm font-bold text-center text-bgBlue">All Comparations</h1>
-                  </div>
 
-                  <div class="hidden border-r border-gray-200 md:block">
-                    <h1 class="py-2 text-sm font-bold text-center text-bgBlue">Comparations</h1>
-                    <ul>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                    </ul>
-                    <h1 class="py-6 text-sm font-bold text-center text-bgBlue">All Comparations</h1>
-                  </div>
+            <!--Meni 2-->
+            <li class="w-40 border-b border-l border-gray-100 md:w-96 hover:bg-gray-100">
+              <button
+                class="flex items-center w-full py-4 pl-5 text-left border-b border-gray-100 outline-none focus:outline-none">
+                <a class="flex-1 text-sm font-bold text-bgBlue">Menu 2</a>
+                <a class="flex justify-end float-right mr-4 justify-self-end justify-items-end">
+                  <svg class="w-4 h-4 transition duration-300 ease-in-out fill-current"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </a>
+              </button>
+              <ul
+                class="absolute top-0 origin-top-left bg-white border-b border-r border-gray-100 right-3 h-200 md:flex ">
+                <!--kolona1-->
+                <li class="px-4 border-l border-r border-gray-100 w-72">
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 1 od meni 2</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 1 od meni 2</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 1 od meni 2</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 1 od meni 2</a>
+                </li>
+                <!--kolona2-->
+                <li class="px-4 border-r border-gray-100 w-72">
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 2 od meni 2</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 2 od meni 2</a>
+                </li>
+                <!--kolona3-->
+                <li class="px-4 border-r border-gray-100 w-72">
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 3 od meni 2</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 3 od meni 2</a>
+                  <a href=""
+                    class="flex w-full py-4 pl-2 pr-1 text-sm text-center border-b border-gray-100 outline-none hover:bg-gray-50 focus:outline-none hover:text-bgBlue">
+                    Kolona 3 od meni 2</a>
+                </li>
+              </ul>
+            </li>
 
-                  <div class="hidden border-r border-gray-200 md:block">
-                    <h1 class="py-2 text-sm font-bold text-center text-bgBlue">Comparations</h1>
-                    <ul>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                      <li class="">
-                        <a class="block py-4 my-auto text-sm text-center text-gray-600 rounded hover:text-bgBlue "
-                          href="#">Sub Menu
-                          Category</a>
-                      </li>
-                    </ul>
-                    <h1 class="py-6 text-sm font-bold text-center text-bgBlue">All Comparations</h1>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
+          </ul>
+
         </div>
         <div>
           <img class="inline-block w-40 " src="/public/build/images/PolicyAdviceLogo.svg" alt="">

@@ -12,6 +12,9 @@ module.exports = {
       },
       boxShadow: {
         box: '0px 0px 10px 10px rgba(0.010, 0.010, 0.010, 0.010), 10px 10px 10px 10px rgba(0.02, 0.02, 0.02, 0.02)',
+      },
+      spacing: {
+        200: '28rem',
       }
     },
 
