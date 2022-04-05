@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-li>ul {
+li>dd {
   transform: translatex(100%) scale(0)
 }
 
-li:hover>ul {
+li:hover>dd {
   transform: translatex(100%) scale(1)
 }
 
