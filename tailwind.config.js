@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         bgOrange: '#FF6600',
         bgBlue: '#0F5499',
+        bgHoverOrange: '#E05A00',
       },
       boxShadow: {
         box: '0px 0px 10px 10px rgba(0.010, 0.010, 0.010, 0.010), 10px 10px 10px 10px rgba(0.02, 0.02, 0.02, 0.02)',
