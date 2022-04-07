@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-
-
   // close
   const close = document.querySelectorAll('.navbar-close');
   const backdrop = document.querySelectorAll('.navbar-backdrop');
