@@ -1591,11 +1591,11 @@ video {
   }
 }
 
-li>dd {
+div>dd {
   transform: translatex(100%) scale(0)
 }
 
-li:hover>dd {
+div:hover>dd {
   transform: translatex(100%) scale(1)
 }
 
